@@ -7,6 +7,7 @@
 }
 
 html{
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
@@ -57,6 +58,7 @@ main{
     height: calc(100vh - 35px - 80px);
 }
 
+
 /* FOOTER */
 
 footer nav{
@@ -65,4 +67,87 @@ footer nav{
     position: absolute;
     bottom: 0;
     background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.nav-button::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.nav-button{
+    height: 100%;
+    display: flex;
+    float: left;
+    justify-content: space-evenly;
+    padding: 0px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.nav-button:first-of-type{
+    padding-left: 10px;
+}
+
+.menu{
+    padding-right: 0px;
+}
+
+.nav-button i{
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+.nav-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: background-color 0.2s;
+}
+
+.nav-button:hover{
+    background-color: #3b3b3b;
+    transition: background-color 0.2s;
+}
+
+.nav-button:hover .nav-arrow{
+    background-color: #222222;
+}
+
+.nav-arrow{
+    height: 100%;
+    margin-left: 15px;
+    padding: 0px 5px;
+    justify-content: center;
+    display: flex;
+    transition: background-color 0.2s;
+}
+
+.nav-arrow:hover{
+    background-color: #3b3b3b !important;
+    transition: background-color 0.2s;
+}
+
+.nav-arrow i{
+    font-size: 0.6rem;
+}
+
+/* END MEETING BUTTON */
+
+.end-meeting{
+    color: red;
+    font-size: 0.7rem;
+    background-color: #4a4a4a;
+    line-height: 80px;
+    padding: 0px 22px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.end-meeting:hover{
+    background-color: #646464;
+    transition: background-color 0.2s;
 }

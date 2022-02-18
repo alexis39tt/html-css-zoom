@@ -68,10 +68,25 @@ main{
 .box{
     width: calc(100% / 7);
     padding: 8px 3px;
+    position: relative;
 }
 
 .box img{
     width: 100%;
+}
+
+.box .label{
+    width: calc(100% - 55%);
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 13px;
+    left: 3px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box .label p{
+    display: inline-block;
 }
 
 /* FOOTER */

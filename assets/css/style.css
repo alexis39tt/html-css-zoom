@@ -8,6 +8,7 @@
 
 html{
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 body{
@@ -17,6 +18,46 @@ body{
 i{
     color: white;
 }
+
+/* HEADER */
+
+header{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+header button{
+    color: white;
+    background-color: #4a4a4a;
+    float: right;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 0px 0px 7px;
+    padding: 0px 5px;
+    transition: background-color 0.2s;
+}
+
+header button:hover{
+    background-color: #646464;
+    transition: background-color 0.2s;
+}
+
+header button:focus{
+    background-color: #3b3b3b;
+}
+
+/* MAIN */
+
+main{
+    width: 100%;
+    height: calc(100vh - 35px - 80px);
+}
+
+/* FOOTER */
 
 footer nav{
     width: 100%;

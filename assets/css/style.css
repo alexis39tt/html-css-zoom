@@ -58,6 +58,21 @@ main{
     height: calc(100vh - 35px - 80px);
 }
 
+.container{
+    padding: 40px 80px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: calc(100% / 7);
+    padding: 8px 3px;
+}
+
+.box img{
+    width: 100%;
+}
 
 /* FOOTER */
 
@@ -133,6 +148,10 @@ footer nav{
 
 .nav-arrow i{
     font-size: 0.6rem;
+}
+
+.fa-share-from-square{
+    color: #4bc803;
 }
 
 /* END MEETING BUTTON */
